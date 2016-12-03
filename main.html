@@ -13,7 +13,7 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		
+
 		<link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
 		<link rel="stylesheet" href="css/jquery.mobile.theme.css" />
 
@@ -58,33 +58,29 @@
 
 		<div data-role="page">
 
-			<nd2-include data-src="examples/fragments/panel.left.html"></nd2-include>
+			<div role="content" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s" style="padding: 0px;">
 
-			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
-				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
-			</div>
-
-			<div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s" style="padding: 0px;">
-				<a href="registration.html"><div class="menuPlate" style="background-color: #ff5722;float: left">
-					<img src="img/approve.png"/><span style="color:#9E9E9E">Registration</span>
+				<a href="registration.html">
+				<div class="menuPlate" style="background-color: #ff5722;">
+					<img src="img/approve.png"/><span style="color:#9E9E9E;text-shadow: none;">Registration</span>
 				</div></a>
-				<div class="menuPlate" style="background-color:#006df0;float: right;">
-					<img src="img/piggy-bank.png" /><span style="color:#9E9E9E">Registration</span>
+				<div class="menuPlate" style="background-color:#006df0;">
+					<img src="img/piggy-bank.png" /><span style="color:#9E9E9E;text-shadow: none;">Registration</span>
 				</div>
-				<div class="menuPlate" style="background-color: #933ec5;float: left">
-					<img src="img/search.png" /><span style="color:#9E9E9E">Search</span>
+				<div class="menuPlate" style="background-color: #933ec5;">
+					<img src="img/search.png" /><span style="color:#9E9E9E;text-shadow: none;">Search</span>
 				</div>
-				<div class="menuPlate" style="background-color: #91dc5a;float: right;">
-					<img src="img/targeting.png" /><span style="color:#9E9E9E">Offline Payments</span>
+				<div class="menuPlate" style="background-color: #91dc5a;">
+					<img src="img/targeting.png" /><span style="color:#9E9E9E;text-shadow: none;">Offline Payments</span>
 				</div>
-				<div class="menuPlate" style="background-color: rgb(0, 188, 212);float: left">
-					<img src="img/promotion.png" /><span style="color:#9E9E9E">Report Issue</span>
+				<div class="menuPlate" style="background-color: rgb(0, 188, 212);">
+					<img src="img/promotion.png" /><span style="color:#9E9E9E;text-shadow: none;">Report Issue</span>
 				</div>
-				<div class="menuPlate" style="background-color:#a9fd00;float: right">
-					<img src="img/tools.png" /><span style="color:#9E9E9E">Settings</span>
+				<div class="menuPlate" style="background-color:#a9fd00;">
+					<img src="img/tools.png" /><span style="color:#9E9E9E;text-shadow: none;">Settings</span>
 				</div>
 				<button class="ui-btn" style="background:#795548;color:white; height: auto;">
-					<i class="zmdi zmdi-mail-receive"></i> Logout
+					<i class="zmdi zmdi-mail-reply-all"></i> Logout
 				</button>
 
 			</div>
@@ -98,10 +94,10 @@
 		<script src="vendor/wow/wow.min.js"></script>
 		<script src="js/nativedroid2.js"></script>
 		<script src="nd2settings.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script type="text/javascript" src="cordova.js"></script>
 		<script src="js/platformOverrides.js"></script>
 		<script src="js/index.js"></script>
-		
+
 	</body>
 </html>

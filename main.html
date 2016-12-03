@@ -13,15 +13,34 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		
+		<link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+
+		<script>
+			var userAgent = navigator.userAgent + '';
+			if (userAgent.indexOf('iPhone') > -1) {
+				document.write('<script src="scripts/cordova-iphone.js"></sc' + 'ript>');
+				var mobile_system = 'iphone';
+			} else if (userAgent.indexOf('Android') > -1) {
+				document.write('<script src="scripts/cordova-android.js"></sc' + 'ript>');
+				var mobile_system = 'android';
+			} else {
+				var mobile_system = '';
+			}
+		</script>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.js"></script>
 		<style>
 			#gender {
 				width: 7em;
 			}
 			.menuPlate {
-				/*min-height: 20%;*/
+				min-height: 20%;
 				border: 0;
 				/*height: 107px;*/
-				width: 49%;
+				width: 100%;
 				/*margin: 10px;*/
 				margin-bottom: 15px;
 				/*border-radius: 3px;*/
@@ -30,7 +49,8 @@
 				-webkit-box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.51);
 				-moz-box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.51);
 				box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.51);
-				text-align: center;
+				/*text-align: center;*/
+				text-shadow: none;
 			}
 		</style>
 	</head>
@@ -78,10 +98,10 @@
 		<script src="vendor/wow/wow.min.js"></script>
 		<script src="js/nativedroid2.js"></script>
 		<script src="nd2settings.js"></script>
-		<!-- <script>
-		var fts = $('#gender');
-		fts.val('female');
-		fts.slider('refresh');
-		</script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script src="js/platformOverrides.js"></script>
+		<script src="js/index.js"></script>
+		
 	</body>
 </html>

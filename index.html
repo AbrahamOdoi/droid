@@ -24,6 +24,24 @@
 				text-decoration: none;
 			}
 		</style>
+		<link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+
+		<script>
+			var userAgent = navigator.userAgent + '';
+			if (userAgent.indexOf('iPhone') > -1) {
+				document.write('<script src="scripts/cordova-iphone.js"></sc' + 'ript>');
+				var mobile_system = 'iphone';
+			} else if (userAgent.indexOf('Android') > -1) {
+				document.write('<script src="scripts/cordova-android.js"></sc' + 'ript>');
+				var mobile_system = 'android';
+			} else {
+				var mobile_system = '';
+			}
+		</script>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile.js"></script>
 	</head>
 	<body>
 
@@ -76,5 +94,10 @@
 		<script src="vendor/wow/wow.min.js"></script>
 		<script src="js/nativedroid2.js"></script>
 		<script src="nd2settings.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script src="js/platformOverrides.js"></script>
+		<script src="js/index.js"></script>
+		
 	</body>
 </html>
